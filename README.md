@@ -12,5 +12,5 @@ Given a query, the program hits the twitter search api and returns a clustered l
 
 **How to run it?**
 * Make sure you have GO installed.
-* open cluster-twitter.sh and set the porject path
+* open cluster-twitter.sh and set the project path
 * run: cluster-twitter.sh -q='amazon'
