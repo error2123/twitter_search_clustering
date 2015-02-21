@@ -207,6 +207,7 @@ func find_best_tweet(clusters map[int]Cluster) map[int]Cluster {
 *********************************************************************/
 func Print_clusters(clusters map[int]Cluster) {
 	for k := range clusters {
+		fmt.Println("********************************************************************")
 		fmt.Println("\n"+"Cluster: ", k)
 		fmt.Println("Best result: " + strings.Replace(clusters[k].best_result, "\n", "", -1))
 		fmt.Println("First result: " + strings.Replace(clusters[k].first_result, "\n", "", -1))
@@ -214,5 +215,6 @@ func Print_clusters(clusters map[int]Cluster) {
 		for _, c := range clusters[k].rest_results {
 			fmt.Println(strings.Replace(c, "\n", "", -1))
 		}
+		fmt.Println("********************************************************************")
 	}
 }
